@@ -1,0 +1,13 @@
+<form:form modelAttribute="todo" id="addTodo"
+	name="addTodo" action="./todos" method="POST" class="clearfix">
+		<div class="has-feedback has-feedback-left col-md-4">
+			<label>Title</label>
+			<form:input class="form-control" name="title" path="title" 
+				id="addrThreshold" type="string" min = "1" max = "100"
+				placeholder="Todo Title" />
+		</div>
+		<div class="search-button col-md-2">
+			<input class="btn btn-lg btn-primary btn-block" type="submit"
+				value="Add" />
+		</div>
+</form:form>

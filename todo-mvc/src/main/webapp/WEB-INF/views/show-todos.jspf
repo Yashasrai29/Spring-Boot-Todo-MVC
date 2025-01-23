@@ -1,0 +1,17 @@
+<div id="result-table" class="result-table">
+	<table class="table table-striped table-bordered dataTable">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Due by</th>
+			</tr>
+
+			<c:forEach var="todo" items="${todos}">
+			   <tr>
+					<td><c:out value="${todo.title}"/></td>
+					<td><javatime:format value="${todo.due}" style="MS" locale="en_IN" /></td>
+				</tr>
+			</c:forEach>
+		</thead>
+	</table>
+</div>
